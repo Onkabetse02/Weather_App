@@ -25,12 +25,12 @@ The Weather App is a web application that provides current weather information f
   - OpenWeather API
   - Geopy, TimezoneFinder, pytz
 - **Deployment**:
-  - Frontend: Netlify
-  - Backend: Render
+  - Render (for both frontend and backend)
 
 ---
 
 ## 🎨 Project Structure
+
 
 \`\`\`
 weather-app/
@@ -64,7 +64,7 @@ weather-app/
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/Onkabetse02/weather-app.git
    cd weather-app
    \`\`\`
 
@@ -104,20 +104,11 @@ weather-app/
    - Set \`Start Command\`: \`gunicorn app:app\`
 3. Deploy the backend and note the URL (e.g., \`https://your-app.onrender.com\`).
 
-### Frontend Deployment (Netlify)
-
-1. Drag and drop your frontend folder (\`static\` + \`index.html\`) into Netlify.
-2. Update \`script.js\` to use the deployed backend URL:
-   \`\`\`javascript
-   fetch(\`https://your-backend-url/weather?city=${city}\`);
-   \`\`\`
-3. Publish the site.
-
 ---
 
 ## 🌟 Usage
 
-1. Visit the frontend URL (e.g., \`https://your-site.netlify.app\`).
+1. Visit the deployed URL (https://weather-app-mm6r.onrender.com)
 2. Enter a city name in the search box.
 3. View the weather details, including:
    - Temperature
@@ -132,10 +123,10 @@ weather-app/
 ## 📸 Screenshots
 
 ### Home Page:
-![Home Page](https://via.placeholder.com/600x300?text=Home+Page)
+![Home Page](./static/images/home_page.png)
 
 ### Weather Result:
-![Weather Result](https://via.placeholder.com/600x300?text=Weather+Result)
+![Weather Result](./static/images/weather_results.png)
 
 ---
 
@@ -150,5 +141,4 @@ This project is licensed under the [MIT License](LICENSE).
 - [OpenWeather API](https://openweathermap.org/api)
 - [Geopy](https://geopy.readthedocs.io/)
 - [Render](https://render.com/)
-- [Netlify](https://www.netlify.com/)
 """
