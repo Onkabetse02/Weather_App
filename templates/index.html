@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='x-icon.ico') }}">
+</head>
+<body>
+    <div id="loader">
+        <div class="loader">Weather Search...</div>
+    </div>
+
+    <div class="weather-search">
+        <h1>Search Weather</h1>
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="get-weather">Search Weather</button>
+    </div>
+    
+    <div id="weather-info">
+        <div class="weather-info-header">
+            <img src="/static/icons/default.png" alt="Default Weather">
+            <h2>City Name</h2>
+        </div>
+        <p class="current-time">Time: --:--</p>
+        <p class="temperature">--°C</p>
+        <p class="temp-range">--°C - --°C</p>
+        <p class="weather-condition">Weather Condition</p>
+        <div class="weather-details">
+            <div class="weather-detail">
+                <h3>Wind Speed</h3>
+                <span>-- km/h</span>
+            </div>
+            <div class="weather-detail">
+                <h3>Humidity</h3>
+                <span>--%</span>
+            </div>
+            <div class="weather-detail">
+                <h3>Pressure</h3>
+                <span>-- hPa</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
