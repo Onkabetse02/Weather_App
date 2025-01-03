@@ -130,15 +130,8 @@ weather-app/
 
 ---
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## 🙌 Acknowledgments
 
 - [OpenWeather API](https://openweathermap.org/api)
 - [Geopy](https://geopy.readthedocs.io/)
 - [Render](https://render.com/)
-"""
