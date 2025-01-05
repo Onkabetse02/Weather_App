@@ -53,8 +53,7 @@ weather-app/
 ## 🧰 Prerequisites
 
 1. Python 3.8+
-2. Node.js (for frontend local testing, optional)
-3. [OpenWeather API Key](https://openweathermap.org/api)
+2. [OpenWeather API Key](https://openweathermap.org/api)
 
 ---
 
