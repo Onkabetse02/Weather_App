@@ -8,8 +8,9 @@ from flask import send_from_directory
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
-load_dotenv()
+# Only load .env file if it exists (typically for local development)
+if os.getenv("FLASK_ENV") != "production":
+    load_dotenv()
 
 # Retrieve the API key from environment variable
 api_key = os.getenv("WEATHER_API_KEY")
